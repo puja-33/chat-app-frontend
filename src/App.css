@@ -1,0 +1,333 @@
+
+
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* MAIN CONTAINER */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 900px;
+  margin: auto;
+  border: 1px solid #ccc;
+}
+
+/* HEADER */
+.chat-header {
+  background: #075e54;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* CHAT BOX */
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #ece5dd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MESSAGE */
+.msg {
+  max-width: 70%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+/* LEFT (OTHER USER) */
+.left {
+  background: white;
+  align-self: flex-start;
+}
+
+/* RIGHT (YOU) */
+.right {
+  background: #dcf8c6;
+  align-self: flex-end;
+}
+
+/* INPUT AREA */
+.input-box {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background: white;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-box button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #075e54;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* 🔥 RESPONSIVE DESIGN */
+
+/* TABLET */
+@media (max-width: 768px) {
+  .chat-container {
+    max-width: 100%;
+  }
+
+  .msg {
+    max-width: 80%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .chat-header {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .input-box input {
+    padding: 8px;
+  }
+
+  .input-box button {
+    padding: 8px 12px;
+  }
+
+  .msg {
+    max-width: 90%;
+    font-size: 14px;
+  }
+}
+
+
+/* CENTER FULL PAGE */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ece5dd;
+}
+
+/* LOGIN CARD */
+.auth-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* TITLE */
+.auth-box h2 {
+  margin-bottom: 20px;
+  color: #075e54;
+}
+
+/* INPUT */
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #075e54;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* HOVER */
+.auth-box button:hover {
+  background: #0b7a6b;
+}
+
+/* LINK */
+.auth-box p {
+  margin-top: 15px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .auth-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .auth-box h2 {
+    font-size: 20px;
+  }
+
+  .auth-box input {
+    padding: 10px;
+  }
+
+  .auth-box button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* 📟 TABLET */
+@media (max-width: 768px) {
+  .auth-box {
+    width: 80%;
+  }
+}
+
+/* CONTAINER */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ece5dd;
+}
+
+/* CARD */
+.auth-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* TITLE */
+.auth-box h2 {
+  margin-bottom: 20px;
+  color: #075e54;
+}
+
+/* INPUT */
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #075e54;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-box button:hover {
+  background: #0b7a6b;
+}
+
+/* LINK */
+.auth-box p {
+  margin-top: 15px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 480px) {
+  .auth-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .auth-box h2 {
+    font-size: 20px;
+  }
+
+  .auth-box input {
+    padding: 10px;
+  }
+
+  .auth-box button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* 📟 TABLET */
+@media (max-width: 768px) {
+  .auth-box {
+    width: 80%;
+  }
+}
+
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background: #ece5dd;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MESSAGE */
+.msg {
+  max-width: 70%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* RIGHT (USER) */
+.right {
+  background: #dcf8c6;
+  align-self: flex-end;
+}
+
+/* LEFT (SERVER) */
+.left {
+  background: white;
+  align-self: flex-start;
+}
+
+/* TIME */
+.msg span {
+  font-size: 10px;
+  display: block;
+  text-align: right;
+}
